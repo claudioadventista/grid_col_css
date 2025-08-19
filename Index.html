@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+   <style>
+    /*
+    
+    ********** reset ********** 
+    
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /*********** fim do reset ***********/
+
+    html, body{
+        width:99vw;
+        height: 100%;
+        margin-left:0.2vw;
+        margin-right:0.2vw;
+        font-family: Helvetica, Arial, sans-serif;
+        background:#ccc;
+    }
+    h1,h2{
+        text-align: center;
+    }
+    input[type='text'], 
+    input[type='date'], 
+    input[type='number'], 
+    input[type='password'],
+    select, 
+    textarea {
+        outline: none;
+        border: none;
+        width:99%;
+        background-color: #fff;
+    }
+
+    /*---------- linha ----------*/
+
+    .linha{
+        position:relative;
+        width:100%;
+        margin:0%;
+        padding:0;
+        left:0;
+    }
+
+    /*---------- colunas grid grade----------*/
+    .col{
+        position:relative;
+        margin:0;
+        padding:0;
+        bottom:0;
+        top:0;
+        margin-top:1px;
+        margin-left:1px;
+        background-color: #fff;
+        float:left;
+        padding:5px 0;
+    }
+    .col-1{
+        width:calc(100% / 12 - 1px);
+    background-color: pink;
+    }
+    .col-2{
+        width:calc(100% / 6 - 1px);
+        background-color:lightyellow;
+    }
+    .col-3{
+        width:calc(100% / 4 - 1px);
+        background-color:lightcyan;
+    }
+    .col-4{
+        width:calc(100% / 3 - 1px);
+    background-color:#cfc;
+    }
+    .col-5{
+        width:calc(100% / 2.4 - 1px);
+    }
+    .col-6{
+        width:calc(100% / 2 - 1px); 
+    }
+    .col-7{
+        width:calc(100% / 1.715 - 1px);
+    }
+    .col-8{
+        width:calc(100% / 1.5 - 1px);
+    }
+    .col-9{
+        width:calc(100% / 1.334 - 1px);
+    }
+    .col-10{
+        width:calc(100% / 1.2 - 1px);
+    }
+    .col-11{
+        width:calc(100% / 1.091 - 1px);
+    }
+    .col-12{
+        width:calc(100% / 1 - 1px); 
+    }
+   </style>
+</head>
+<body>
+    <div class="linha">
+        <div class="col col-12" style="background-color:#2a49a4;color:#fff">
+            <h1>Grid com 12 colunas</h1>
+        </div>
+    </div>
+    <div class="linha">
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-1">col-1</div>
+    </div>
+    <div class="linha">
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-2">col-2</div>
+    </div>
+    <div class="linha">
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-3">col-3</div>
+    </div>
+    <div class="linha">
+        <div class="col col-4">col-4</div>
+        <div class="col col-4">col-4</div>
+        <div class="col col-4">col-4</div>
+    </div>
+    <div class="linha">
+        <div class="col col-5">col-5</div>
+        <div class="col col-5">col-5</div>
+        <div class="col col-2">col-2</div>
+    </div>
+    <div class="linha">
+        <div class="col col-6">col-6</div>
+        <div class="col col-6">col-6</div>
+    </div>
+    <div class="linha">
+        <div class="col col-7">col-7</div>
+        <div class="col col-5">col-5</div>
+    </div>
+    <div class="linha">
+        <div class="col col-8">col-8</div>
+        <div class="col col-4">col-4</div>
+    </div>
+    <div class="linha">
+        <div class="col col-9">col-9</div>
+        <div class="col col-3">col-3</div>
+    </div>
+    <div class="linha">
+        <div class="col col-10">col-10</div>
+        <div class="col col-2">col-2</div>
+    </div>
+    <div class="linha">
+        <div class="col col-11">col-11</div>
+        <div class="col col-1">col-1</div>
+    </div>
+    <div class="linha">
+        <div class="col col-12">col-12</div>
+    </div>
+    <div class="linha">
+        <div class="col col-6">col-6</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-4">col-4</div>
+    </div>
+    <div class="linha">
+        <div class="col col-3">col-3</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-6">col-6</div>
+    </div>
+    <div class="linha">
+        <div class="col col-1">col-1</div>
+        <div class="col col-5">col-5</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-5">col-5</div>
+    </div>
+    <div class="linha">
+        <div class="col col-7">col-7</div>
+        <div class="col col-5">col-5</div>
+    </div>
+    <div class="linha">
+        <div class="col col-7">col-7</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-1">col-1</div>
+    </div>
+    <div class="linha">
+        <div class="col col-9">col-9</div>
+        <div class="col col-3">col-3</div>
+    </div>
+    <div class="linha">
+        <div class="col col-9">col-9</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-1">col-1</div>
+    </div>
+    <div class="linha">
+        <div class="col col-1">col-1</div>
+        <div class="col col-11">col-11</div>
+    </div>
+    <div class="linha">
+        <div class="col col-4">col-4</div>
+        <div class="col col-2">col-2</div>
+        <div class="col col-3">col-3</div>
+        <div class="col col-1">col-1</div>
+        <div class="col col-2">col-2</div>
+    </div>
+</body>
+  </html>
